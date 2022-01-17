@@ -1,0 +1,15 @@
+{% extends'layout.html' %}
+{% block content %}
+<div class="rightrow">
+   <img src='static\Corendon_voorkant.png.' alt="corendon logo" class="home_logo">
+   <h1>Vlucht informatie</h1>
+   <p>
+      uw vlucht is vertrokken op {{vertrek_vlucht}}
+      uw vlucht komt aan op {{aankomst_vlucht}}
+   </p>
+   <p>
+      door gebruikt te maken van de wifi en/of deze website gaat u akkoord met de gebruiksvoorwaarden
+   </p>
+   <a href="/voorwaarden">voorwaarden</a>
+</div>
+{% endblock content %}

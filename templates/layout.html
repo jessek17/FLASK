@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="/css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+      <title>Corendon portal</title>
+      <link rel="icon" type="image/x-icon" href="/static/favicon_corendon.png">
+   </head>
+   <body>
+
+      <div class="header">
+         <a href="/home" title="Home"><img src="https://static.corendonresources.com/web-ui/dist/src/assets/images/corendon-logo.d3a2811738de30f445846df06876d011.svg"
+              class="header-icon"></a>
+         <a class="right border"><p style="font-size:20px;">Hoi, {{naam}}</p><p style="font-size:10px;">Punten: {{punten}}</p></a>
+         <button class="right button button-shopping-cart" onclick="document.getElementById('id01').style.display='block'"><img src="static/shopping-cart-big.png"></button>
+
+          <!--<h1>Corendon in flight Wifi</h1>
+         <h4>Gebruiker online: {{naam}}</h4>-->
+      </div>
+      <div class="navbar">
+         <div id="navbar-container">
+               <a href="/home" title="Home"><img src="static/home-icon.png" class="home-icon"></a>
+               <a href="/home" class="border">home</a>
+               <a href="/index" class="right">LOGIN</a>
+               <a href="/webshop" class="right">WEBSHOP</a>
+            </ul>
+         </div>
+      </div>
+      <footer class="footer font-navbar">
+         <a href="/contact" class="left">CONTACT</a>
+         <p align="right"> telefoonnummer-023 7510606 en buitenland +31 237510606</p>
+      </footer>
+      {% block content%}{% endblock%}
+   </body>
+</html>
